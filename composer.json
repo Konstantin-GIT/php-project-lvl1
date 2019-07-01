@@ -1,0 +1,8 @@
+{
+    "name": "konstantin/hex_project01",
+    "description": "Hexlet Project01 - Brain Games!",
+    "bin": [
+    "bin/brain-games"
+    ],
+    "require": {}
+}
