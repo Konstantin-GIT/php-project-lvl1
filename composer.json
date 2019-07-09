@@ -8,14 +8,16 @@
        }
     ],
     "bin": [
-    "bin/brain-games"
+    "bin/brain-games",
+    "bin/brain-even"
     ],
     "scripts": {
       "phpcs": "phpcs"
     },
     "autoload": {
        "files": [
-	    "src/cli.php"
+      "src/cli.php",
+      "src/brain-even.php"
 	]
     },
     "require": {"wp-cli/php-cli-tools": "^0.11"},
