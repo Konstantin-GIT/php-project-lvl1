@@ -16,8 +16,6 @@ function run()
         $numberOne = random_int($min, $max);
         $numberTwo = random_int($min, $max);
         $question = "{$numberOne} {$operation} {$numberTwo}"    ;
-        var_dump($question);
-        var_dump($operation);
         switch ($operation) {
             case '-':
                 $answerRight = $numberOne - $numberTwo;
@@ -29,7 +27,6 @@ function run()
                 $answerRight =  $numberOne * $numberTwo;
                 break;
         }
-        var_dump($answerRight);
         $questionAnswer['question'] = $question;
         $questionAnswer['answerRight'] = $answerRight;
         return $questionAnswer;
