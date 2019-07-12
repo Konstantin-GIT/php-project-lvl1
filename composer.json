@@ -7,17 +7,21 @@
         "email": "konstantin000008@gmail.com"
        }
     ],
-    "bin": [
+    "bin": [    
     "bin/brain-games",
-    "bin/brain-even"
+    "bin/brain-even",
+    "bin/brain-calc"
     ],
     "scripts": {
-      "phpcs": "phpcs"
+      "phpcs": "phpcs",
+      "phpcbf": "phpcbf"
     },
     "autoload": {
        "files": [
       "src/cli.php",
-      "src/brain-even.php"
+      "src/games/brain-even.php",
+      "src/games/brain-calc.php",
+      "src/engine.php"
 	]
     },
     "require": {"wp-cli/php-cli-tools": "^0.11"},
