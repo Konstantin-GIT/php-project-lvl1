@@ -1,10 +1,23 @@
 <?php
 namespace BrainGames\Prime;
 use function BrainGames\Engine\engine;
-use function BrainGames\Even\even;
-use function BrainGames\Gcd\gcd;
 
 const TASK_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+function isPrime($number)
+{
+    if ($number == 1) {
+        return false;
+    }
+    
+    for ($i = 2; $i * $i <= $number; $i++) {
+        if ($number % $i == 0) {
+            return false;
+        }
+    }
+    
+    return true;
+}
 
 function run()
 {
@@ -12,9 +25,9 @@ function run()
         $questionAnswer = [];
         $min = 1;
         $max = 100;
-        $number = random_int($min, $max);
+        $number = 4;
         $question = "{$number}";
-        $answerRight = !even($number) && (gcd($number,$max) === 1) ? 'yes' : 'no';
+        $answerRight = isPrime($number) ? 'yes' : 'no';
         $questionAnswer['question'] = $question;
         $questionAnswer['answerRight'] = $answerRight;
         return $questionAnswer;
