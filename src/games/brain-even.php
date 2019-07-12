@@ -4,9 +4,10 @@ use function BrainGames\Engine\engine;
 
 const TASK_GAME = 'Answer "yes" if number even otherwise answer "no".';
 
-function even($number) {
-  return $number % 2 == 0;  
-};
+function even($number)
+{
+    return $number % 2 == 0;
+}
 
 function run()
 {

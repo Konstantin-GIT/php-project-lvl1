@@ -9,7 +9,7 @@ function gcd($a, $b)
     $i = $a;
     while ($a % $i !== 0 || $b % $i !== 0) {
         $i -= 1;
-    }
+    };
     return $i;
 }
 

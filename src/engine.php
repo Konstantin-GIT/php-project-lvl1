@@ -9,16 +9,16 @@ function engine($task, $questionAnswer)
     $name = \cli\prompt('May I have your name?');
     line("Hello, %s!", $name);
     $counter = 3;
-    for ($i = 0; $i < $counter; $i++) {
+    for ($i = 1; $i <= $counter; $i++) {
         $arrQuestionAnswer = $questionAnswer();
         $question = $arrQuestionAnswer['question'];
         $answerRight = $arrQuestionAnswer['answerRight'];
         line("Question: {$question}");
         $answerUser = \cli\prompt('Your answer');
-        if (($answerUser == $answerRight) && ($counter === 3)) {
+        if (($answerUser == $answerRight) && ($i === 3)) {
              line('Correct!');
              line("Congrastulations,{$name}");
-        } elseif (($answerUser == $answerRight) && ($counter !== 3)) {
+        } elseif (($answerUser == $answerRight) && ($i !== 3)) {
              line('Correct!');
         } else {
                 line("'{$answerUser}' is wrong answer ;(. Correct answer was '{$answerRight}'.
