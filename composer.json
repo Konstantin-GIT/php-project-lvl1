@@ -1,6 +1,8 @@
 {
     "name": "konstantin/hex_project01",
     "description": "Hexlet Project01 - Brain Games!",
+    "keywords": ["brain-games"],
+    "type": "project",
     "authors": [
       {
         "name": "Konstantin Naumovich",
