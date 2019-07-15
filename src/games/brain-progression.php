@@ -6,7 +6,7 @@ const TASK_GAME = 'What number is missing in the progression?';
 const BEGIN_GAME = 'What number is missing in the progression?';
 
     
-function progression($startElement, $step, $length)
+function makeProgression($startElement, $step, $length)
 {
     $progression = [];
     $tempElement = $startElement;
@@ -25,7 +25,7 @@ function run()
         $stepProgression = 2;
         $lengthProgression = 10;
         
-        $progression = progression($startElementProgression, $stepProgression, $lengthProgression);
+        $progression = makeProgression($startElementProgression, $stepProgression, $lengthProgression);
         $keyUnknownsElement = random_int(0, $lengthProgression - 1);
         $newProgression = $progression;
         $newProgression[$keyUnknownsElement] = '..';

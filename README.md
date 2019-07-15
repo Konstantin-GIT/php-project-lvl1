@@ -4,7 +4,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/7e7959a5318b236e1b30/maintainability)](https://codeclimate.com/github/Konstantin-GIT/php-project-lvl1/maintainability)
 
-step 1: https://asciinema.org/a/uPwqCCWoosuJtdUqITwdQpdSM     
+step 1: https://asciinema.org/a/1M1ynsLYQz6rT6o34K5FPEqud    
 
 step 2: https://asciinema.org/a/MT2UFHZ4MXbFqgx0nX6ixmAcB
 
@@ -16,4 +16,4 @@ step 6: https://asciinema.org/a/RIdEVS5nJZZ3AIxgTTh5fdHhB
 
 step 7: https://asciinema.org/a/ZtETT46HT53EGp9mvXjcSokOB
 
-step 8: https://asciinema.org/a/iE0n1lAAVmNDzfuJyHC6ifqba
+step 8: https://asciinema.org/a/iE0n1lAAVmNDzfuJyHC6ifqba   
