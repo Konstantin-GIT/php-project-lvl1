@@ -4,7 +4,7 @@ namespace BrainGames\Progression;
 use function BrainGames\Engine\engine;
 
 const TASK_GAME = 'What number is missing in the progression?';
-const LENGTH_PROGRESSION = 10;  
+const LENGTH_PROGRESSION = 10;
 
 function makeProgression()
 {
@@ -12,7 +12,8 @@ function makeProgression()
     $min = 1;
     $max = 7;
     $start = random_int($min, $max);
-    $diff = random_int($min, $max);;
+    $diff = random_int($min, $max);
+    ;
     for ($i = 0; $i < LENGTH_PROGRESSION; $i++) {
         $progression[] = $start + $diff * $i;
     };

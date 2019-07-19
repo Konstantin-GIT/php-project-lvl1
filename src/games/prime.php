@@ -25,7 +25,7 @@ function run()
     $getQuestionAswer = function () {
         $min = 1;
         $max = 100;
-        $a = random_int($min, $max);                
+        $a = random_int($min, $max);
         $question = $a;
         $answerRight = isPrime($a) ? 'yes' : 'no';
         return [$question, $answerRight];
