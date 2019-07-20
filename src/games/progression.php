@@ -13,7 +13,6 @@ function makeProgression()
     $max = 7;
     $start = random_int($min, $max);
     $diff = random_int($min, $max);
-    ;
     for ($i = 0; $i < LENGTH_PROGRESSION; $i++) {
         $progression[] = $start + $diff * $i;
     };
@@ -25,9 +24,9 @@ function run()
     $getQuestionAswer = function () {
         $progression = makeProgression();
         $keyUnknownsElement = random_int(0, LENGTH_PROGRESSION - 1);
-        $newProgression = $progression;
-        $newProgression[$keyUnknownsElement] = '..';
-        $question = implode(" ", $newProgression);
+        $ProgressionForPrint = $progression;
+        $ProgressionForPrint[$keyUnknownsElement] = '..';
+        $question = implode(" ", $ProgressionForPrint);
         $answerRight =  $progression[$keyUnknownsElement];
         return [$question, $answerRight];
     };
