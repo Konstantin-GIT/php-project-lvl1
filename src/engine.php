@@ -10,15 +10,15 @@ function engine($task, $getQuestionAnswer)
     line("{$task}");
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    $roundCount = 3;
-    for ($i = 1; $i <= $roundCount; $i++) {
-        [$question, $answerRight] = $getQuestionAnswer();
+    $roundsCount = 3;
+    for ($i = 1; $i <= $roundsCount; $i++) {
+        [$question, $rightAnswer] = $getQuestionAnswer();
         line("Question: $question");
-        $answerUser = prompt('Your answer');
-        if ($answerUser == $answerRight) {
+        $userAnswer = prompt('Your answer');
+        if ($userAnswer == $rightAnswer) {
              line('Correct!');
-        } elseif ($answerUser !== $answerRight) {
-                line("'$answerUser' is wrong answer ;(. Correct answer was '$answerRight'.
+        } else {
+                line("'$userAnswer' is wrong answer ;(. Correct answer was '$rightAnswer'.
                 Let's try again, $name!");
                 return;
         }

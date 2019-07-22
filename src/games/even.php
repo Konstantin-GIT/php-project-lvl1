@@ -1,7 +1,7 @@
 <?php
 namespace BrainGames\Even;
 
-use function BrainGames\Engine\engine;
+use function brainGames\engine\engine;
 
 const TASK_GAME = 'Answer "yes" if number even otherwise answer "no".';
 
@@ -15,10 +15,9 @@ function run()
     $getQuestionAswer = function () {
         $min = 1;
         $max = 100;
-        $a = random_int($min, $max);
-        $question = $a;
-        $answerRight = isEven($a) ? 'yes' : 'no';
-        return [$question, $answerRight];
+        $question = random_int($min, $max);
+        $rightAnswer = isEven($question) ? 'yes' : 'no';
+        return [$question, $rightAnswer];
     };
 
     engine(TASK_GAME, $getQuestionAswer);

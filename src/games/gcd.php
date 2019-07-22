@@ -1,7 +1,7 @@
 <?php
 namespace BrainGames\Gcd;
 
-use function BrainGames\Engine\engine;
+use function brainGames\engine\engine;
 
 const TASK_GAME = 'Find the greatest common divisor of given numbers.';
     
@@ -22,8 +22,8 @@ function run()
         $a = random_int($min, $max);
         $b = random_int($min, $max);
         $question = "$a $b";
-        $answerRight = getGreatesCommonDivisor($a, $b);
-        return [$question, $answerRight];
+        $rightAnswer = getGreatesCommonDivisor($a, $b);
+        return [$question, $rightAnswer];
     };
 
     engine(TASK_GAME, $getQuestionAswer);

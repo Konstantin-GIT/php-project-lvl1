@@ -1,18 +1,16 @@
 <?php
 namespace BrainGames\Progression;
 
-use function BrainGames\Engine\engine;
+use function brainGames\engine\engine;
 
 const TASK_GAME = 'What number is missing in the progression?';
 const LENGTH_PROGRESSION = 10;
+const MIN = 1;
+const MAX = 7;
 
-function makeProgression()
+function makeProgression($start, $diff)
 {
     $progression = [];
-    $min = 1;
-    $max = 7;
-    $start = random_int($min, $max);
-    $diff = random_int($min, $max);
     for ($i = 0; $i < LENGTH_PROGRESSION; $i++) {
         $progression[] = $start + $diff * $i;
     };
@@ -22,13 +20,15 @@ function makeProgression()
 function run()
 {
     $getQuestionAswer = function () {
-        $progression = makeProgression();
-        $keyUnknownsElement = random_int(0, LENGTH_PROGRESSION - 1);
-        $ProgressionForPrint = $progression;
-        $ProgressionForPrint[$keyUnknownsElement] = '..';
-        $question = implode(" ", $ProgressionForPrint);
-        $answerRight =  $progression[$keyUnknownsElement];
-        return [$question, $answerRight];
+        $start = random_int(MIN, MAX);
+        $diff = random_int(MIN, MAX);
+        $progression = makeProgression($start, $diff);
+        $progressionWithoutElement = $progression;
+        $unknownElementKey = random_int(0, LENGTH_PROGRESSION - 1);
+        $progressionWithoutElement[$unknownElementKey] = '..';
+        $question = implode(" ", $progressionWithoutElement);
+        $rightAnswer =  $progression[$unknownElementKey];
+        return [$question, $rightAnswer];
     };
 
     engine(TASK_GAME, $getQuestionAswer);

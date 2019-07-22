@@ -1,7 +1,15 @@
 {
     "name": "konstantin/hex_project01",
     "description": "Hexlet Project01 - Brain Games!",
-    "keywords": ["brain-games"],
+    "keywords": ["games",
+    "brain-games",
+    "brain-even", 
+    "brain-even",
+    "brain-calc",
+    "brain-gcd",
+    "brain-progression",
+    "brain-prime"
+    ],
     "type": "project",
     "authors": [
       {
@@ -23,7 +31,6 @@
     },
     "autoload": {
        "files": [
-      "src/cli.php",
       "src/games/even.php",
       "src/games/calc.php",
       "src/games/gcd.php",
