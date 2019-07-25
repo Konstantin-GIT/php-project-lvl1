@@ -4,6 +4,8 @@ namespace BrainGames\Prime;
 use function brainGames\engine\engine;
 
 const TASK_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const MIN = 1;
+const MAX = 100;
 
 function isPrime($n)
 {
@@ -23,9 +25,7 @@ function isPrime($n)
 function run()
 {
     $getQuestionAswer = function () {
-        $min = 1;
-        $max = 100;
-        $question = random_int($min, $max);
+        $question = random_int(MIN, MAX);
         $rightAnswer = isPrime($question) ? 'yes' : 'no';
         return [$question, $rightAnswer];
     };

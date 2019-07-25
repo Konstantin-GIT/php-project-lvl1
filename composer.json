@@ -1,7 +1,8 @@
 {
-    "name": "konstantin/hex_project01",
-    "description": "Hexlet Project01 - Brain Games!",
-    "keywords": ["games",
+  "name": "konstantin/hex_project01",
+  "description": "Hexlet Project01 - Brain Games!",
+  "keywords": [
+    "games",
     "brain-games",
     "brain-even", 
     "brain-even",
@@ -9,38 +10,40 @@
     "brain-gcd",
     "brain-progression",
     "brain-prime"
-    ],
-    "type": "project",
-    "authors": [
-      {
-        "name": "Konstantin Naumovich",
-        "email": "konstantin000008@gmail.com"
-       }
-    ],
-    "bin": [    
+  ],
+  "type": "project",
+  "authors": [
+    {
+      "name": "Konstantin Naumovich",
+      "email": "konstantin000008@gmail.com"
+    }
+  ],
+  "bin": [    
     "bin/brain-games",
     "bin/brain-even",
     "bin/brain-calc",
     "bin/brain-gcd",
     "bin/brain-progression",
     "bin/brain-prime"
-    ],
-    "scripts": {
-      "phpcs": "phpcs",
-      "phpcbf": "phpcbf"
-    },
-    "autoload": {
-       "files": [
+  ],
+  "scripts": {
+    "phpcs": "phpcs",
+    "phpcbf": "phpcbf"
+  },
+  "autoload": {
+    "files": [
       "src/games/even.php",
       "src/games/calc.php",
       "src/games/gcd.php",
       "src/games/progression.php",
       "src/games/prime.php",
       "src/engine.php"
-	]
-    },
-    "require": {"wp-cli/php-cli-tools": "^0.11"},
-    "require-dev": {
-       "squizlabs/php_codesniffer":"3.*"
-     }
+	  ]
+  },
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer":"3.*"
+  }
 }

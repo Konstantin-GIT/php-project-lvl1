@@ -4,14 +4,15 @@ namespace BrainGames\Engine;
 use function \cli\prompt;
 use function \cli\line;
 
+const ROUNDS_COUNT = 3;
+
 function engine($task, $getQuestionAnswer)
 {
     line('Welcome to the Brain Game!');
     line("{$task}");
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    $roundsCount = 3;
-    for ($i = 1; $i <= $roundsCount; $i++) {
+    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         [$question, $rightAnswer] = $getQuestionAnswer();
         line("Question: $question");
         $userAnswer = prompt('Your answer');
