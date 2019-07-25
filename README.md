@@ -6,15 +6,15 @@
 
 ### Description
 
-Brain-Games - это набор мини-игр, запускаемых из консоли. Данная реализация игр велась в рамках курсов по программированию и выполнения  проекта  на [hexlet.io](https://hexlet.io). Подробнее о проекте читайте на [Hexlet](https://ru.hexlet.io/professions/php/projects/45).
+Brain-Games - это набор мини-игр, запускаемых из консоли. Данная реализация игр велась в рамках курсов по программированию и выполнения проекта на обучающем ресурсе [Hexlet](https://ru.hexlet.io/professions/php/projects/45).
 
 ### List of games
 
-brain-even - answer "yes" if number even otherwise answer "no".
-brain-calc - what is the result of the expression?
-brain-gcd - find the greatest common divisor of given numbers.
-brain-prime - answer "yes" if given number is prime. Otherwise answer "no".
-brain-progression - what number is missing in the progression?
+* brain-even - answer "yes" if number even otherwise answer "no".
+* brain-calc - what is the result of the expression?
+* brain-gcd - find the greatest common divisor of given numbers.
+* brain-prime - answer "yes" if given number is prime. Otherwise answer "no".
+* brain-progression - what number is missing in the progression?
 
 ### Install
 
